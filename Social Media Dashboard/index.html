@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Social Media Dashboard</h1>
+  </header>
+  <div class="container" id="loginPage">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+  <div class="container hidden" id="appsPage">
+    <h2>Choose an App</h2>
+    <div class="app-list">
+      <button onclick="showPosts('Facebook')">Facebook</button>
+      <button onclick="showPosts('Twitter')">Twitter</button>
+      <button onclick="showPosts('Instagram')">Instagram</button>
+    </div>
+  </div>
+  <div class="container hidden" id="postsPage">
+    <button onclick="goBack()">Back to Apps</button>
+    <h2 id="appTitle">App Name</h2>
+    <div id="posts">
+      <!-- Posts will appear here -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
